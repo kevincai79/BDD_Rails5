@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Process for creating articles feature test and feature
 
-Things you may want to cover:
+- Create a branch to do the development work
+- Write feature test
+- Build features to make test pass one by one
+- Once the feature test passes with no errors - merge branch with master branch
 
-* Ruby version
+- Visit root page
+- Click on new article
+- Fill in title
+- Fill in body
+- Create article
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Article has been created
+- Articles path

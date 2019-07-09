@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.3.7'
 
+# Rake 11.0.1 removes the last_comment method which Rails 2.3 rspec-core (< 3.4.4) uses. Therefore until/if a patch is released we need to pin rake to an older version in Gemfile:
+
+gem 'rake', '< 11.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
@@ -37,7 +41,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-  gem 'rspec-rails', '3.1.0'
+  gem 'rspec-rails', '~> 3.5.0'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
