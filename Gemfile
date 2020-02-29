@@ -5,7 +5,7 @@ ruby '2.3.7'
 
 # Rake 11.0.1 removes the last_comment method which Rails 2.3 rspec-core (< 3.4.4) uses. Therefore until/if a patch is released we need to pin rake to an older version in Gemfile:
 
-gem 'rake', '< 11.0'
+gem 'rake', '< 13.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
